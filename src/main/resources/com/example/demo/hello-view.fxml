@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="scenePane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <children>
+      <Pane fx:id="colorPane" prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #fafafa;" />
+      <TextField fx:id="num" layoutX="14.0" layoutY="15.0" prefHeight="25.0" prefWidth="100.0" promptText="Your number" />
+      <TextField fx:id="lb" layoutX="295.0" layoutY="15.0" prefHeight="25.0" prefWidth="100.0" promptText="Left border" />
+      <TextField fx:id="rb" layoutX="400.0" layoutY="15.0" prefHeight="25.0" prefWidth="100.0" promptText="Right border" />
+      <Button fx:id="start" layoutX="535.0" layoutY="15.0" mnemonicParsing="false" onAction="#onStartButton" prefHeight="25.0" prefWidth="50.0" text="start" />
+      <Button fx:id="equal" layoutX="275.0" layoutY="200.0" onAction="#onEqualButton" prefHeight="25.0" prefWidth="50.0" text="equal" />
+      <Button fx:id="less" layoutX="174.0" layoutY="200.0" mnemonicParsing="false" onAction="#onLessButton" prefHeight="25.0" prefWidth="50.0" text="less" />
+      <Button fx:id="more" layoutX="375.0" layoutY="200.0" mnemonicParsing="false" onAction="#onMoreButton" prefHeight="25.0" prefWidth="50.0" text="more" />
+      <TextField fx:id="text" alignment="CENTER" layoutX="225.0" layoutY="97.0" promptText="That your number?" />
+      <Button fx:id="exit" layoutX="562.0" layoutY="360.0" mnemonicParsing="false" onAction="#onExitButton" prefHeight="10.0" prefWidth="10.0" text="X" />
+      <MenuButton fx:id="themeMenu" layoutX="14.0" layoutY="71.0" mnemonicParsing="false" text="MenuButton">
+        <items>
+          <MenuItem fx:id="themeOne" mnemonicParsing="false" onAction="#onThemeOneButton" text="Theme 1" />
+          <MenuItem fx:id="themeTwo" mnemonicParsing="false" onAction="#onThemeTwoButton" text="Theme 2" />
+            <MenuItem fx:id="themeThree" mnemonicParsing="false" onAction="#onThemeThreeButton" text="Theme 3" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>
